@@ -1,50 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Biểu mẫu liên hệ</title>
-  <style>
-    .alert {
-      padding: 10px;
-      background-color: #f8d7da;
-      border: 1px solid #f5c6cb;
-      color: #721c24;
-      margin-bottom: 10px;
-      display: none; /* Ẩn thanh thông báo ban đầu */
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ đồ ăn bình dân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    .success {
-      background-color: #d4edda;
-      border-color: #c3e6cb;
-      color: #155724;
-    }
-  </style>
-  <script>
-    function showSuccessMessage() {
-      var alertElement = document.getElementById("alert");
-      setTimeout(function() {
-        alertElement.style.display = "block"; // Hiển thị thanh thông báo sau 2 giây
-      }, 2000);
-    }
-  </script>
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            margin: 0;
+        }
+
+        .product p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <h1>Liên hệ</h1>
+    <header>
+        <h1>Đồ ăn bình dân</h1>
+    </header>
 
-  <form method="POST" action="" onsubmit="showSuccessMessage()">
-    <label for="name">Họ và tên:</label>
-    <input type="text" id="name" name="name" required>
+    <div class="product-container">
+        <div class="product">
+            <img src="path_to_image1.jpg" alt="Product 1">
+            <h3>Tên sản phẩm 1</h3>
+            <p>Mô tả sản phẩm 1.</p>
+            <p>Giá: $10</p>
+            <button>Mua hàng</button>
+        </div>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+        <div class="product">
+            <img src="path_to_image2.jpg" alt="Product 2">
+            <h3>Tên sản phẩm 2</h3>
+            <p>Mô tả sản phẩm 2.</p>
+            <p>Giá: $15</p>
+            <button>Mua hàng</button>
+        </div>
 
-    <label for="message">Nội dung:</label>
-    <textarea id="message" name="message" required></textarea>
+        <div class="product">
+            <img src="path_to_image3.jpg" alt="Product 3">
+            <h3>Tên sản phẩm 3</h3>
+            <p>Mô tả sản phẩm 3.</p>
+            <p>Giá: $12</p>
+            <button>Mua hàng</button>
+        </div>
 
-    <button type="submit">Gửi</button>
-  </form>
+        <div class="product">
+            <img src="path_to_image4.jpg" alt="Product 4">
+            <h3>Tên sản phẩm 4</h3>
+            <p>Mô tả sản phẩm 4.</p>
+            <p>Giá: $8</p>
+            <button>Mua hàng</button>
+        </div>
 
-  <div id="alert" class="alert success">
-    Thành công! Email đã được gửi đi thành công.
-  </div>
+        <div class="product">
+            <img src="path_to_image5.jpg" alt="Product 5">
+            <h3>Tên sản phẩm 5</h3>
+            <p>Mô tả sản phẩm 5.</p>
+            <p>Giá: $11</p>
+            <button>Mua hàng</button>
+        </div>
+
+        <div class="product">
+            <img src="path_to_image6.jpg" alt="Product 6">
+            <h3>Tên sản phẩm 6</h3>
+            <p>Mô tả sản phẩm 6.</p>
+            <p>Giá: $9</p>
+            <button>Mua hàng</button>
+        </div>
+
+        <div class="product">
+            <img src="path_to_image7.jpg" alt="Product 7">
+            <h3>Tên sản phẩm 7</h3>
+            <p>Mô tả sản phẩm 7.</p>
+            <p>Giá: $14</p>
+            <button>Mua hàng</button>
+        </div>
+
+        <div class="product">
+            <img src="path_to_image8.jpg" alt="Product 8">
+            <h3>Tên sản phẩm 8</h3>
+            <p>Mô tả sản phẩm 8.</p>
+            <p>Giá: $13</p>
+            <button>Mua hàng</button>
+        </div>
+
+        <div class="product">
+            <img src="path_to_image9.jpg" alt="Product 9">
+            <h3>Tên sản phẩm 9</h3<p>Mô tả sản phẩm 9.</p>
+            <p>Giá: $7</p>
+            <button>Mua hàng</button>
+        </div>
+
+        <!-- Thêm các sản phẩm khác vào đây -->
+    </div>
+
+    <footer>
+        <p>Bản quyền &copy; 2024 Đồ ăn bình dân. All rights reserved.</p>
+    </footer>
 </body>
 </html>

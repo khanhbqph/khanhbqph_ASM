@@ -1,0 +1,93 @@
+@keyframes blink {
+    0% {
+        color: blue;
+        transform: scale(0.8);
+    }
+    50% {
+        color: pink;
+        transform: scale(1);
+    }
+    100% {
+        color: red;
+        transform: scale(0.8);
+    }
+}
+
+h4 {
+    animation: blink 1s infinite;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: #626a67;
+}
+
+h4:hover {
+    color: #ff0000;
+    transform: scale(0.9);
+}
+@media (max-width: 480px) {
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    h4 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 769px) {
+    h4 {
+        font-size: 40px;
+    }
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    width: 300px;
+    border: 1px solid #b2afaf;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+.product:hover {
+    transform: scale(1.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin: 0;
+}
+
+.product p {
+    color: #666;
+}
+footer {
+    background-color: rgb(230, 171, 227);
+    text-align: center;
+    margin-top: 100px;
+    color: #000;
+    font-size: 20px;
+    display: block;
+}
+marquee {
+    color: red;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    background-color: aqua;
+
+}

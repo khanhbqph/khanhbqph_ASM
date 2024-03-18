@@ -38,27 +38,28 @@
   }
 
   input[type="submit"] {
-    background: linear-gradient(to right, pink, rgb(255, 0, 0));
-    color: white;
-      border: none;
-      padding: 10px 35px;
-      cursor: pointer;
-      float: right;
-      margin-right: 30px;margin-left: 20px;
-      border-radius: 15px;  
-      width: 150px;
-      flex-shrink: 0;
-  }
-
-  input[type="submit"]:hover {
-    background: linear-gradient(to left, pink, rgb(255, 0, 0));
-    color: white;
+      background: linear-gradient(to right, pink, rgb(255, 0, 0));
+      color: white;
       border: none;
       padding: 10px 35px;
       cursor: pointer;
       float: right;
       margin-right: 30px;
-      border-radius: 15px;  
+      margin-left: 20px;
+      border-radius: 15px;
+      width: 150px;
+      flex-shrink: 0;
+  }
+
+  input[type="submit"]:hover {
+      background: linear-gradient(to left, pink, rgb(255, 0, 0));
+      color: white;
+      border: none;
+      padding: 10px 35px;
+      cursor: pointer;
+      float: right;
+      margin-right: 30px;
+      border-radius: 15px;
       width: 150px;
       flex-shrink: 0;
   }
@@ -67,7 +68,8 @@
 
       form label,
       input[type="text"],
-      textarea,input[type="submit"]:hover,
+      textarea,
+      input[type="submit"]:hover,
       input[type="submit"] {
           width: 100%;
           margin-right: 0;
@@ -196,7 +198,11 @@
       }
   }
 
+
+  
+
   h1 {
+      
       text-align: center;
       margin-top: 100px;
       margin-bottom: 100px;
