@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sản phẩm</title>
-</head>
-<body>
+    <style>
+        /* header */
+        * {
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+
+        }
+
+        header a {
+            color: #000000;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+            color: red;
+            background-color: aqua;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        .search-box {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input[type="text"] {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+        .search-box button {
+
+            border: none;
+            cursor: pointer;
+            margin-left: 20px;
+            background: linear-gradient(to right, pink, yellowgreen);
+            color: white;
+            border-radius: 15px;
+            padding: 10px 35px;
+            width: 150px;
+            flex-shrink: 0;
+        }
+
+        p {
+            color: #ff0000;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 10px;
+            }
+
+            header a {
+                margin-right: 10px;
+                font-size: 14px;
+            }
+
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .search-box {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .search-box input[type="text"] {
+                width: 70%;
+            }
+
+            .search-box button {
+                width: 30%;
+            }
+        }
+    </style>
     
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="Trangchu.html">
+                    <img src="img/1.jpg" alt="Logo" width="100">
+                </a>
+            </div>
+            <a href="Trangchu.html">Trang chủ</a>
+            <a href="Gioithieu.html">Giới thiệu</a>
+            <a href="Sanpham.html">Sản phẩm</a>
+            <a href="Lienhe.html">Liên hệ</a>
+            <a href="Tintuc.html">Tin tức</a>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">Tìm</button>
+            </div>
+        </div>
+    </header>
+    <footer>Sản phẩm đồ ăn bán chạy nhất © khanhbqph21610 Copyrighted khanhbqph21610@fpt.edu.vn <p>🦕Trang thực
+            phẩm, sản phẩm sạch🦕<br>
+            (❤️ ω ❤️)</p>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biểu mẫu liên hệ</title>
+  <style>
+    .alert {
+      padding: 10px;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      color: #721c24;
+      margin-bottom: 10px;
+      display: none; /* Ẩn thanh thông báo ban đầu */
+    }
+
+    .success {
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+      color: #155724;
+    }
+  </style>
+  <script>
+    function showSuccessMessage() {
+      var alertElement = document.getElementById("alert");
+      setTimeout(function() {
+        alertElement.style.display = "block"; // Hiển thị thanh thông báo sau 2 giây
+      }, 2000);
+    }
+  </script>
+</head>
+<body>
+  <h1>Liên hệ</h1>
+
+  <form method="POST" action="" onsubmit="showSuccessMessage()">
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Nội dung:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Gửi</button>
+  </form>
+
+  <div id="alert" class="alert success">
+    Thành công! Email đã được gửi đi thành công.
+  </div>
+</body>
+</html>

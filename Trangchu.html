@@ -15,35 +15,143 @@
 
     <title>Trang chủ</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+
+        }
+
+        header a {
+            color: #000000;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+            color: red;
+            background-color: aqua;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        .search-box {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+        p {
+            color: #ff0000;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .search-box input[type="text"] {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+        .search-box button {
+
+            border: none;
+            cursor: pointer;
+            margin-left: 20px;
+            background: linear-gradient(to right, pink, yellowgreen);
+            color: white;
+            border-radius: 15px;
+            padding: 10px 35px;
+            width: 150px;
+            flex-shrink: 0;
+        }
+
+
+
+        @media (max-width: 600px) {
+            header {
+                padding: 10px;
+            }
+
+            header a {
+                margin-right: 10px;
+                font-size: 14px;
+            }
+
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .search-box {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .search-box input[type="text"] {
+                width: 70%;
+            }
+
+            .search-box button {
+                width: 30%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="flex-container">
-        <div class="logo" style="flex-grow: 1;">
-            <img style="width: 160px; height: 90px; margin-top: 4px;" src="img/1.jpg" alt="">
-        </div>
-        <div class="menu">
-            <div class="item" style="flex-grow: 1;">
-                <h6> <a href="Trangchu.html"><strong>Trang chủ</strong></a></h6>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="Trangchu.html">
+                    <img src="img/1.jpg" alt="Logo" width="100">
+                </a>
             </div>
-            <div class="item">
-                <h6><a href="Sanpham.html"><strong>Sản phẩm</strong></a></h6>
-            </div>
-            <div class="item">
-                <h6><a href="Gioithieu.html"><strong>Giới Thiệu</strong></a></h6>
-            </div>
-            <div class="item">
-                <h6><a href="Tintuc.html"><strong>Tin tức</strong></a></h6>
-            </div>
-            <div class="item">
-                <h6><a href="Lienhe.html"><strong>Liên hệ</strong></a></h6>
+            <a href="Trangchu.html">Trang chủ</a>
+            <a href="Gioithieu.html">Giới thiệu</a>
+            <a href="Sanpham.html">Sản phẩm</a>
+            <a href="Lienhe.html">Liên hệ</a>
+            <a href="Tintuc.html">Tin tức</a>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">Tìm</button>
             </div>
         </div>
-        <div class="search-container" style="flex-grow: 1;">
-            <input type="text" id="search-input" placeholder="Tìm kiếm...">
-            <button id="search-button1">Tìm kiếm</button>
-        </div>
-    </div>
+    </header>
     <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
     <div class="container">
 
@@ -1345,47 +1453,12 @@
         </div>
     </div>
 
-    <div id="footer">
-        <div class="box">
-            <div class="logo">
-                <img src="img/2.jpg" alt="">
-            </div>
-            <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
-        </div>
-        <div class="box">
-            <h3>NỘI DUNG</h3>
-            <ul class="quick-menu">
-                <div class="item">
-                    <a href="">Trang chủ</a>
-                </div>
-                <div class="item">
-                    <a href="Sanpham.html">Sản phẩm</a>
-                </div>
-                <div class="item">
-                    <a href="Gioithieu.html">Giới thiệu</a>
-                </div>
-                <div class="item">
-                    <a href="Tintuc.html">Tin tức</a>
-                </div>
-                <div class="item">
-                    <a href="Lienhe.html">Liên hệ</a>
-                </div>
-            </ul>
-        </div>
-        <div class="box">
-            <h3>LIÊN HỆ</h3>
-            <form action="">
-                <input type="text" placeholder="Địa chỉ email">
-                <button>Nhận tin</button>
-            </form>
-        </div>
-
-    </div>
-
 <script src="scrip.js"></script>
-<footer>Sản phẩm đồ ăn bán chạy nhất © khanhbqph21610 Copyrighted khanhbqph21610@fpt.edu.vn <p>🦕Trang thực phẩm, sản phẩm sạch🦕<br>
-    (❤️ ω ❤️)</p></footer>
-   
+
+    <footer>Sản phẩm đồ ăn bán chạy nhất © khanhbqph21610 Copyrighted khanhbqph21610@fpt.edu.vn <p>🦕Trang thực
+            phẩm, sản phẩm sạch🦕<br>
+            (❤️ ω ❤️)</p>
+    </footer>
 
 </body>
 
