@@ -7,12 +7,6 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
     <title>Sản phẩm</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -57,7 +51,7 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            background-color: #f2f2f2;
+            background-color: #e9e8e8;
             padding: 20px;
             border-radius: 5px;
         }
@@ -71,11 +65,13 @@
             display: flex;
             align-items: center;
         }
+
         p {
             color: #ff0000;
             font-size: 16px;
             line-height: 1.5;
         }
+
         .search-box input[type="text"] {
             padding: 5px 10px;
             border: none;
@@ -84,20 +80,31 @@
         }
 
         .search-box button {
-
             border: none;
             cursor: pointer;
             margin-left: 20px;
-            background: linear-gradient(to right, pink, yellowgreen);
+            background: linear-gradient(to left, yellowgreen, pink);
             color: white;
             border-radius: 15px;
-            padding: 10px 35px;
+            padding: 10px 20px;
             width: 150px;
-            flex-shrink: 0;
+        }
+
+        .search-box button:hover {
+            border: none;
+            cursor: pointer;
+            margin-left: 20px;
+            background: linear-gradient(to right, red, pink);
+            color: white;
+            border-radius: 15px;
+            padding: 10px 20px;
+            width: 150px;
+             /* flex-shrink: 0; */
         }
 
 
 
+       
         @media (max-width: 600px) {
             header {
                 padding: 10px;
@@ -1453,7 +1460,7 @@
         </div>
     </div>
 
-<script src="scrip.js"></script>
+    <script src="scrip.js"></script>
 
     <footer>Sản phẩm đồ ăn bán chạy nhất © khanhbqph21610 Copyrighted khanhbqph21610@fpt.edu.vn <p>🦕Trang thực
             phẩm, sản phẩm sạch🦕<br>

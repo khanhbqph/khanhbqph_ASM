@@ -3,10 +3,12 @@
         color: blue;
         transform: scale(0.8);
     }
+
     50% {
         color: pink;
         transform: scale(1);
     }
+
     100% {
         color: red;
         transform: scale(0.8);
@@ -25,6 +27,7 @@ h4:hover {
     color: #ff0000;
     transform: scale(0.9);
 }
+
 @media (max-width: 480px) {
     h4 {
         font-size: 20px;
@@ -51,21 +54,34 @@ h4:hover {
 }
 
 .product {
+    background-color: #e4e2e2;
     width: 300px;
-    border: 1px solid #b2afaf;
+    border: 1px solid #ff0404;
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
     transition: transform 0.3s;
 }
+
 .product:hover {
     transform: scale(1.2);
 }
 
 .product img {
     width: 100%;
-    height: auto;
+    height: 50%;
     margin-bottom: 10px;
+}
+
+.product button {
+    border: 1px solid #ffa2ec;
+    cursor: pointer;
+    background: linear-gradient(to left, yellowgreen, pink);
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    
 }
 
 .product h3 {
@@ -73,8 +89,16 @@ h4:hover {
 }
 
 .product p {
-    color: #666;
+    color: rgb(0, 0, 0);
+
 }
+del{
+    color: #0400ff;
+}
+.product .a{
+    color: #ff0000;
+}
+
 footer {
     background-color: rgb(230, 171, 227);
     text-align: center;
@@ -83,11 +107,12 @@ footer {
     font-size: 20px;
     display: block;
 }
+
 marquee {
     color: red;
     width: 100%;
     font-size: 20px;
     display: flex;
     background-color: aqua;
-
+    margin-bottom: 100px;
 }
