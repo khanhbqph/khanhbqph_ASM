@@ -137,7 +137,17 @@
                 width: 30%;
             }
         }
+        .product-details {
+            display: none;
+            margin-top: 10px;
+            background-color: #e4e2e2;
+            border: 1px solid #ff0404;
+            border-radius: 5px;
+            padding: 10px;
+            transition: transform 0.5s;
+        }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -160,7 +170,7 @@
         </div>
     </header>
     <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
-    <div class="container">
+    <div class="container" onclick="flipCard(this)">
 
         <div class="thumbnail" style="grid-column: 1/2; ">
             <img class="img-main" src="img/products.jpg" alt="product">
@@ -186,6 +196,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
         <div class="thumbnail" style="grid-column: 2/3; ">
             <img class="img-main" src="img/products.jpg" alt="product">
@@ -211,6 +225,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
         <div class="thumbnail" style="grid-column: 3/4; ">
             <img class="img-main" src="img/products.jpg" alt="product">
@@ -236,82 +254,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-        </div>
-
-        <div class="thumbnail" style="grid-column: 1/2; ">
-            <img class="img-main" src="img/products.jpg" alt="product">
-            <div class="starts">
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
-            <div class="name">Combo món ăn bình dân</div>
-            <div class="desc">- Đồ ăn bao gồm: lạp xưởng,<br> đậu rang thịt, ngũ cốc, hoa quả.</div>
-            <del class="price-del">430.000VNĐ</del>
-            <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
-            <button>View detail</button>
-        </div>
-        <div class="thumbnail" style="grid-column: 2/3; ">
-            <img class="img-main" src="img/products.jpg" alt="product">
-            <div class="starts">
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-            </div>
-            <div class="name">Combo món ăn bình dân</div>
-            <div class="desc">- Đồ ăn bao gồm: lạp xưởng,<br> đậu rang thịt, ngũ cốc, hoa quả.</div>
-            <del class="price-del">430.000VNĐ</del>
-            <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
-            <button>View detail</button>
-        </div>
-        <div class="thumbnail" style="grid-column: 3/4; ">
-            <img class="img-main" src="img/products.jpg" alt="product">
-            <div class="starts">
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-                <span>
-                    <img src="img/starts.png" alt="" style="width: 20px;">
-                </span>
-            </div>
-            <div class="name">Combo món ăn bình dân</div>
-            <div class="desc">- Đồ ăn bao gồm: lạp xưởng,<br> đậu rang thịt, ngũ cốc, hoa quả.</div>
-            <del class="price-del">430.000VNĐ</del>
-            <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
-            <button>View detail</button>
         </div>
 
         <div class="thumbnail" style="grid-column: 1/2; ">
@@ -338,6 +284,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
         <div class="thumbnail" style="grid-column: 2/3; ">
             <img class="img-main" src="img/products.jpg" alt="product">
@@ -363,6 +313,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
         <div class="thumbnail" style="grid-column: 3/4; ">
             <img class="img-main" src="img/products.jpg" alt="product">
@@ -388,6 +342,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
 
         <div class="thumbnail" style="grid-column: 1/2; ">
@@ -414,6 +372,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
         <div class="thumbnail" style="grid-column: 2/3; ">
             <img class="img-main" src="img/products.jpg" alt="product">
@@ -439,6 +401,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
         <div class="thumbnail" style="grid-column: 3/4; ">
             <img class="img-main" src="img/products.jpg" alt="product">
@@ -464,6 +430,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
 
         <div class="thumbnail" style="grid-column: 1/2; ">
@@ -490,6 +460,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
         <div class="thumbnail" style="grid-column: 2/3; ">
             <img class="img-main" src="img/products.jpg" alt="product">
@@ -515,6 +489,10 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
         <div class="thumbnail" style="grid-column: 3/4; ">
             <img class="img-main" src="img/products.jpg" alt="product">
@@ -540,10 +518,102 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
+        </div>
+
+        <div class="thumbnail" style="grid-column: 1/2; ">
+            <img class="img-main" src="img/products.jpg" alt="product">
+            <div class="starts">
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+            </div>
+            <div class="name">Combo món ăn bình dân</div>
+            <div class="desc">- Đồ ăn bao gồm: lạp xưởng,<br> đậu rang thịt, ngũ cốc, hoa quả.</div>
+            <del class="price-del">430.000VNĐ</del>
+            <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
+            <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
+        </div>
+        <div class="thumbnail" style="grid-column: 2/3; ">
+            <img class="img-main" src="img/products.jpg" alt="product">
+            <div class="starts">
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+            </div>
+            <div class="name">Combo món ăn bình dân</div>
+            <div class="desc">- Đồ ăn bao gồm: lạp xưởng,<br> đậu rang thịt, ngũ cốc, hoa quả.</div>
+            <del class="price-del">430.000VNĐ</del>
+            <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
+            <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
+        </div>
+        <div class="thumbnail" style="grid-column: 3/4; ">
+            <img class="img-main" src="img/products.jpg" alt="product">
+            <div class="starts">
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+                <span>
+                    <img src="img/starts.png" alt="" style="width: 20px;">
+                </span>
+            </div>
+            <div class="name">Combo món ăn bình dân</div>
+            <div class="desc">- Đồ ăn bao gồm: lạp xưởng,<br> đậu rang thịt, ngũ cốc, hoa quả.</div>
+            <del class="price-del">430.000VNĐ</del>
+            <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
+            <button>View detail</button>
+             <div class="product-details">
+                <h2 >Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
         </div>
 
     </div>
-
+    
     <div id="comment">
         <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2>
         <div id="comment-body">
@@ -1460,7 +1530,13 @@
         </div>
     </div>
 
-    <script src="scrip.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.thumbnail').click(function () {
+                $(this).find('.product-details').slideToggle();
+            });
+        });
+    </script>
 
     <footer>Sản phẩm đồ ăn bán chạy nhất © khanhbqph21610 Copyrighted khanhbqph21610@fpt.edu.vn <p>🦕Trang thực
             phẩm, sản phẩm sạch🦕<br>

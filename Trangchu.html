@@ -99,45 +99,14 @@
             line-height: 1.5;
         }
 
-        @media (max-width: 600px) {
-            header {
-                padding: 10px;
-            }
-
-            header a {
-                margin-right: 10px;
-                font-size: 14px;
-            }
-
-            .container {
-                flex-wrap: wrap;
-            }
-
-            .logo {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-
-            .search-box {
-                margin-left: 0;
-                width: 100%;
-            }
-
-            .search-box input[type="text"] {
-                width: 70%;
-            }
-
-            .search-box button {
-                width: 30%;
-            }
-        }
-
         .product-details {
             display: none;
+            margin-top: 10px;
             background-color: #e4e2e2;
             border: 1px solid #ff0404;
             border-radius: 5px;
-            margin-top: 15px;
+            padding: 10px;
+            transition: transform 0.5s;
         }
     </style>
     <link rel="stylesheet" href="style2.css">
@@ -180,16 +149,16 @@
         đặc
         trưng của Ẩm thực Việt từ truyền thống đến hiện đại nhé.</marquee>
 
-    <div class="product-container">
+    <div class="product-container" onclick="flipCard(this)">
         <div class="product">
             <img src="img/2.jpg" alt="Product 1">
             <h3>Tên sản phẩm 1</h3>
             <p>Mô tả sản phẩm 1.</p>
             <p class="a">Giá: $10</p>
-            <button style="text-align: center;">Mua hàng</button>
+            <button>Mua hàng</button>
             <div class="product-details">
-                <h2>Chi tiết sản phẩm 1</h2>
-                <p>Thông tin chi tiết sản phẩm 1</p>
+                <h2>Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
 
@@ -411,9 +380,6 @@
                 <p>Thông tin chi tiết sản phẩm 1</p>
             </div>
         </div>
-
-
-        <!-- Thêm các sản phẩm khác vào đây -->
     </div>
     <script>
         $(document).ready(function () {
@@ -422,7 +388,6 @@
             });
         });
     </script>
-
 
     <footer>Sản phẩm đồ ăn bán chạy nhất © khanhbqph21610 Copyrighted khanhbqph21610@fpt.edu.vn <p>🦕Trang thực
             phẩm, sản phẩm sạch🦕<br>
