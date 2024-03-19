@@ -64,7 +64,7 @@ h4:hover {
 }
 
 .product:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .product img {
@@ -76,12 +76,23 @@ h4:hover {
 .product button {
     border: 1px solid #ffa2ec;
     cursor: pointer;
-    background: linear-gradient(to left, yellowgreen, pink);
+    background: linear-gradient(to right, yellowgreen, pink);
     color: white;
     border-radius: 15px;
     padding: 10px 20px;
     width: 100%;
-    
+
+}
+
+.product button:hover {
+    border: 1px solid #ffa2ec;
+    cursor: pointer;
+    background: linear-gradient(to left, red, pink);
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 100%;
+
 }
 
 .product h3 {
@@ -92,10 +103,12 @@ h4:hover {
     color: rgb(0, 0, 0);
 
 }
-del{
+
+del {
     color: #0400ff;
 }
-.product .a{
+
+.product .a {
     color: #ff0000;
 }
 
