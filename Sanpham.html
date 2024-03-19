@@ -66,7 +66,7 @@
             align-items: center;
         }
 
-        p {
+        footer p {
             color: #ff0000;
             font-size: 16px;
             line-height: 1.5;
@@ -99,44 +99,114 @@
             border-radius: 15px;
             padding: 10px 20px;
             width: 150px;
-             /* flex-shrink: 0; */
+            /* flex-shrink: 0; */
         }
 
 
 
-       
-        @media (max-width: 600px) {
-            header {
-                padding: 10px;
-            }
 
-            header a {
-                margin-right: 10px;
-                font-size: 14px;
-            }
+        @media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
 
-            .container {
-                flex-wrap: wrap;
-            }
+    header a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
 
-            .logo {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
+    .container {
+        flex-wrap: wrap;
 
-            .search-box {
-                margin-left: 0;
-                width: 100%;
-            }
+    }
 
-            .search-box input[type="text"] {
-                width: 70%;
-            }
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
-            .search-box button {
-                width: 30%;
-            }
-        }
+    .search-box {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .search-box input[type="text"] {
+        width: 70%;
+    }
+
+    .search-box button {
+        width: 30%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .search-box input[type="text"] {
+        width: 70%;
+    }
+
+    .search-box button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    header a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .search-box input[type="text"] {
+        width: 70%;
+    }
+
+    .search-box button {
+        width: 30%;
+    }
+}
+
         .product-details {
             display: none;
             margin-top: 10px;
@@ -169,7 +239,7 @@
             </div>
         </div>
     </header>
-    <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+    <h1>SẢN PHẨM CỦA CHÚNG TÔI</h1>
     <div class="container" onclick="flipCard(this)">
 
         <div class="thumbnail" style="grid-column: 1/2; ">
@@ -196,8 +266,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -225,8 +295,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -254,8 +324,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -284,8 +354,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -313,8 +383,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -342,8 +412,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -372,8 +442,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -401,8 +471,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -430,8 +500,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -460,8 +530,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -489,8 +559,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -518,8 +588,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -548,8 +618,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -577,8 +647,8 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
@@ -606,931 +676,57 @@
             <del class="price-del">430.000VNĐ</del>
             <div class="price" data-name="Sản phẩm 1" data-price="10">Giá: 200.000 VNĐ</div>
             <button>View detail</button>
-             <div class="product-details">
-                <h2 >Chi tiết sản phẩm 2</h2>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
                 <p>Thông tin chi tiết sản phẩm 2</p>
             </div>
         </div>
 
     </div>
-    
+
     <div id="comment">
-        <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2>
-        <div id="comment-body">
-            <div class="prev">
-                <a href="#">
-                    <img src="img/prev.png" alt="" style="height:50px; margin-bottom: 100px; margin-right: 30px;">
-                </a>
-            </div>
-            <ul id="list-comment">
+        <h3>NHẬN XÉT CỦA KHÁCH HÀNG</h3>
 
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/banner.png" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/avatar.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="avatar">
-                        <img src="img/Gordon_Ramsay.jpg" alt="">
-                    </div>
-
-                    <div class="name">Gordon Ramsay<br>(15 ngôi sao Michelin)</div>
-                    <div class="starts">
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span><span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                        <span>
-                            <img src="img/starts.png" alt="">
-                        </span>
-                    </div>
-
-                    <div class="text1">
-                        <p>
-                            Gordon James Ramsay (sinh ngày 8 tháng 11 năm 1966) là một đầu bếp nổi tiếng,
-                            chủ sở hữu nhiều nhà hàng và ngôi sao truyền hình người Scotland. Trên tổng số
-                            15 ngôi sao Michelin, nhà hàng của Ramsay đã được trao tặng đến 14 ngôi sao và
-                            ông còn được Hoàng gia Anh phong tước OBE (tước Tiểu Hiệp Sĩ) vào năm 2006 nhằm tôn vinh
-                            những cống hiến của Ramsay đem đến cho ngành ẩm thực nước nhà. Cùng với việc làm chủ một
-                            chuỗi
-                            nhà hàng, Gordon Ramsay được tôn vinh là nhân vật có tầm ảnh hưởng nhất trong ngành công
-                            nghiệp
-                            lưu trú và ẩm thực của Vương quốc Anh năm 2009, trở thành ông chủ nhà hàng và khách sạn
-                            quyền lực nhất do Tạp chí Caterer and Hotelkeeper bầu chọn
-                        </p>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="next">
-                <a href="#">
-                    <img src="img/next.png" alt="" style="height:50px;  margin-left: 30px; margin-bottom: 100px;">
-                </a>
-            </div>
-        </div>
     </div>
 
+    <div class="comment-form">
+        <h4>Họ và tên:</h4>
+        <input type="text" id="name-input" placeholder="Nhập tên của bạn">
+        <h4>Nhập bình luận:</h4>
+        <textarea id="comment-input" placeholder="Nhập bình luận của bạn"></textarea>
+        <button onclick="addComment()">Đăng bình luận</button>
+
+
+        <ul id="comment-list" class="comment-list"></ul>
+    </div>
     <script>
+        function addComment() {
+            var nameInput = document.getElementById('name-input');
+            var commentInput = document.getElementById('comment-input');
+            var nameText = nameInput.value.trim();
+            var commentText = commentInput.value.trim();
+
+            if (nameText !== '' && commentText !== '') {
+                var commentList = document.getElementById('comment-list');
+                var commentItem = document.createElement('li');
+                commentItem.classList.add('comment-item');
+
+                var commentHeader = document.createElement('div');
+                commentHeader.classList.add('comment-header');
+                commentHeader.textContent = nameText;
+                commentItem.appendChild(commentHeader);
+
+                var commentContent = document.createElement('div');
+                commentContent.textContent = commentText;
+                commentItem.appendChild(commentContent);
+
+                commentList.appendChild(commentItem);
+
+                nameInput.value = '';
+                commentInput.value = '';
+            }
+        }
+
         $(document).ready(function () {
             $('.thumbnail').click(function () {
                 $(this).find('.product-details').slideToggle();

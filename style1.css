@@ -1,74 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-
-.container {
-    max-width: 600px;
+.contact-form {
+    max-width: 500px;
     margin: 0 auto;
-    background-color: #ff0000;
-    padding: 20px;
-    border-radius: 5px;
 }
 
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
+.contact-form button {
+    display: block;
+    margin-top: 10px;
+}
 
-form {
+.contact-info {
     margin-top: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+.contact-info p {
+    margin-bottom: 5px;
 }
 
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-input[type="submit"] {
-    background: linear-gradient(to right, pink, rgb(255, 0, 0));
-    color: white;
-    border: none;
-    padding: 10px 35px;
-    cursor: pointer;
-    float: right;
-    margin-right: 30px;
-    margin-left: 20px;
-    border-radius: 15px;
-    width: 150px;
-    flex-shrink: 0;
-}
-
-input[type="submit"]:hover {
-    background: linear-gradient(to left, pink, rgb(255, 0, 0));
-    color: white;
-    border: none;
-    padding: 10px 35px;
-    cursor: pointer;
-    float: right;
-    margin-right: 30px;
-    border-radius: 15px;
-    width: 150px;
-    flex-shrink: 0;
-}
-
-@media (max-width: 600px) {
-
-    form label,
-    input[type="text"],
-    textarea,
-    input[type="submit"]:hover,
-    input[type="submit"] {
-        width: 100%;
-        margin-right: 0;
+@media (min-width: 768px) {
+    .contact-form {
+        max-width: 800px;
     }
 }
 
@@ -166,6 +124,74 @@ p {
     line-height: 1.5;
 }
 
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .search-box input[type="text"] {
+        width: 70%;
+    }
+
+    .search-box button {
+        width: 30%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .search-box input[type="text"] {
+        width: 70%;
+    }
+
+    .search-box button {
+        width: 30%;
+    }
+}
+
 @media (max-width: 600px) {
     header {
         padding: 10px;
@@ -178,6 +204,7 @@ p {
 
     .container {
         flex-wrap: wrap;
+
     }
 
     .logo {
