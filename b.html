@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <style>
+        .product-card {
+            perspective: 1000px;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .product-card-inner {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .product-card-front,
+        .product-card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .product-card-front {
+            background-color: #f2f2f2;
+        }
+
+        .product-card-back {
+            background-color: #e0e0e0;
+            transform: rotateY(180deg);
+        }
+
+        .product-card.flip .product-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .product-details {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        .product-card.flip .product-details {
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .product-card {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card" onclick="flipCard(this, 0)">
+        <div class="product-card-inner">
+            <div class="product-card-front">
+                <h2>Sản phẩm 1</h2>
+                <p>Mô tả sản phẩm 1</p>
+            </div>
+            <div class="product-card-back">
+                <div class="product-details">
+                    <h2 id="product-title-0">Chi tiết sản phẩm 1</h2>
+                    <p id="product-description-0">Thông tin chi tiết sản phẩm 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" onclick="flipCard(this, 1)">
+        <div class="product-card-inner">
+            <div class="product-card-front">
+                <h2>Sản phẩm 2</h2>
+                <p>Mô tả sản phẩm 2</p>
+            </div>
+            <div class="product-card-back">
+                <div class="product-details">
+                    <h2 id="product-title-1">Chi tiết sản phẩm 2</h2>
+                    <p id="product-description-1">Thông tin chi tiết sản phẩm 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function flipCard(card, productId) {
+            card.classList.toggle('flip');
+            showProductDetails(productId);
+        }
+
+        function showProductDetails(productId) {
+            const productTitles = document.querySelectorAll('[id^="product-title-"]');
+            const productDescriptions = document.querySelectorAll('[id^="product-description-"]');
+
+            productTitles.forEach(title => {
+                title.style.display = 'none';
+            });
+
+            productDescriptions.forEach(description => {
+                description.style.display = 'none';
+            });
+
+            const selectedTitle = document.getElementById(`product-title-${productId}`);
+            const selectedDescription = document.getElementById(`product-description-${productId}`);
+
+            selectedTitle.style.display = 'block';
+            selectedDescription.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
