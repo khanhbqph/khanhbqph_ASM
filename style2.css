@@ -47,13 +47,6 @@ h2:hover {
     }
 } */
 
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 100px;
-
-}
 
 .container {
     display: flex;
