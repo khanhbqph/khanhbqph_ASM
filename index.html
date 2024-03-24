@@ -1,11 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trang chủ</title>
+    <style>
+        /* header */
+        * {
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+
+        }
+
+        header a {
+            color: #000000;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+            color: red;
+            background-color: aqua;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #e9e8e8;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        .search-box {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input[type="text"] {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+        .search-box button {
+            border: none;
+            cursor: pointer;
+            margin-left: 20px;
+            background: linear-gradient(to left, yellowgreen, pink);
+            color: white;
+            border-radius: 15px;
+            padding: 10px 20px;
+            width: 150px;
+        }
+
+        .search-box button:hover {
+            border: none;
+            cursor: pointer;
+            margin-left: 20px;
+            background: linear-gradient(to right, red, pink);
+            color: white;
+            border-radius: 15px;
+            padding: 10px 20px;
+            width: 150px;
+        }
+
+
+        p {
+            color: #ff0000;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .product-details {
+            display: none;
+            margin-top: 10px;
+            z-index: 999;
+            background-color: #e4e2e2;
+            border: 1px solid #ff0404;
+            border-radius: 5px;
+            padding: 10px;
+            transition: transform 0.5s;
+        }
+    </style>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/1.jpg" alt="Logo" width="100">
+                </a>
+            </div>
+            <a href="index.html">Trang chủ</a>
+            <a href="Gioithieu.html">Giới thiệu</a>
+            <a href="Sanpham.html">Sản phẩm</a>
+            <a href="Lienhe.html">Liên hệ</a>
+            <a href="Tintuc.html">Tin tức</a>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">Tìm</button>
+            </div>
+        </div>
+    </header>
+
+    <h4>Chuyên cung cấp đồ ăn ngon,<br> hợp vệ sinh cho mọi người với những món ăn bình dân quen thuộc.</h4>
+
+    <marquee>Nhắc đến Ẩm thực Việt, rất nhiều Đầu bếp nổi tiếng phải
+        trầm trồ vì sự đa dạng, phong phú, nhiều màu sắc. Món ăn Việt Nam với sự hòa quyện giữa lịch sử, văn hóa
+        cùng
+        nét tinh tế, tài tình của người dân Việt đã chinh phục vị giác hàng triệu thực khách trong và ngoài nước,
+        trở
+        thành niềm tự hào của người Việt.
+
+        Ngày nay, dù chúng ta được tiếp xúc với nhiều nền Ẩm thực từ các nước trên thế giới thế nhưng món ăn truyền
+        thống Việt Nam vẫn đóng vai trò quan trọng trong nhịp sống hằng ngày và nhận được cảm tình của bạn bè quốc
+        tế.
+        Ngoài ra, Việt Nam còn nhiều món ăn đặc sắc được làm từ nguyên liệu tự nhiên. Cùng nhau điểm tên một số nét
+        đặc
+        trưng của Ẩm thực Việt từ truyền thống đến hiện đại nhé.</marquee>
+
+    <div class="product-container" onclick="flipCard(this)">
+        <div class="product">
+            <img src="img/2.jpg" alt="Product 1">
+            <h3>Tên sản phẩm 1</h3>
+            <p>Mô tả sản phẩm 1.</p>
+            <p class="a">Giá: $10</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 2</h2>
+                <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/3.jpg" alt="Product 2">
+            <h3>Tên sản phẩm 2</h3>
+            <p>Mô tả sản phẩm 2.</p>
+            <p class="a">Giá: $15</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/4.jpg" alt="Product 3">
+            <h3>Tên sản phẩm 3</h3>
+            <p>Mô tả sản phẩm 3.</p>
+            <p class="a">Giá: $12</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/products.jpg" alt="Product 4">
+            <h3>Tên sản phẩm 4</h3>
+            <p>Mô tả sản phẩm 4.</p>
+            <del>Giá: $15</del>
+            <p class="a">Giá: $8</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/products1.jpg" alt="Product 5">
+            <h3>Tên sản phẩm 5</h3>
+            <p>Mô tả sản phẩm 5.</p>
+            <p class="a">Giá: $11</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/7.jpg" alt="Product 6">
+            <h3>Tên sản phẩm 6</h3>
+            <p>Mô tả sản phẩm 6.</p>
+            <p class="a">Giá: $9</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/8.jpg" alt="Product 7">
+            <h3>Tên sản phẩm 7</h3>
+            <p>Mô tả sản phẩm 7.</p>
+            <p class="a">Giá: $14</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/9.jpg" alt="Product 8">
+            <h3>Tên sản phẩm 8</h3>
+            <p>Mô tả sản phẩm 8.</p>
+            <p class="a">Giá: $13</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/10.jpg" alt="Product 9">
+            <h3>Tên sản phẩm 9</h3>
+            <p>Mô tả sản phẩm 9.</p>
+            <p class="a">Giá: $7</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/100.jpg" alt="Product 10">
+            <h3>Tên sản phẩm 10</h3>
+            <p>Mô tả sản phẩm 10.</p>
+            <p class="a">Giá: $8</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/11.jpg" alt="Product 11">
+            <h3>Tên sản phẩm 11</h3>
+            <p>Mô tả sản phẩm 11.</p>
+            <p class="a">Giá: $6</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/12.jpg" alt="Product 12">
+            <h3>Tên sản phẩm 12</h3>
+            <p>Mô tả sản phẩm 12.</p>
+            <p class="a">Giá: $7</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/13.jpg" alt="Product 13">
+            <h3>Tên sản phẩm 13</h3>
+            <p>Mô tả sản phẩm 13.</p>
+            <p class="a">Giá: $10</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/14.jpg" alt="Product 14">
+            <h3>Tên sản phẩm 14</h3>
+            <p>Mô tả sản phẩm 14.</p>
+            <p class="a">Giá: $9</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/15.jpg" alt="Product 15">
+            <h3>Tên sản phẩm 15</h3>
+            <p>Mô tả sản phẩm 15.</p>
+            <p class="a">Giá: $5</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/16.jpg" alt="Product 16">
+            <h3>Tên sản phẩm 16</h3>
+            <p>Mô tả sản phẩm 16.</p>
+            <p class="a">Giá: $11</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/17.jpg" alt="Product 17">
+            <h3>Tên sản phẩm 17</h3>
+            <p>Mô tả sản phẩm 17.</p>
+            <p class="a">Giá: $6</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/18.jpg" alt="Product 18">
+            <h3>Tên sản phẩm 18</h3>
+            <p>Mô tả sản phẩm 18.</p>
+            <p class="a">Giá: $7</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/19.jpg" alt="Product 19">
+            <h3>Tên sản phẩm 19</h3>
+            <p>Mô tả sản phẩm 19.</p>
+            <p class="a">Giá: $9</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/20.jpg" alt="Product 20">
+            <h3>Tên sản phẩm 20</h3>
+            <p>Mô tả sản phẩm 20.</p>
+            <p class="a">Giá: $5</p>
+            <button>Mua hàng</button>
+            <div class="product-details">
+                <h2>Chi tiết sản phẩm 1</h2>
+                <p>Thông tin chi tiết sản phẩm 1</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.product').click(function () {
+                $(this).find('.product-details').slideToggle();
+            });
+        });
+    </script>
+
+    <footer>Sản phẩm đồ ăn bán chạy nhất © khanhbqph21610 Copyrighted khanhbqph21610@fpt.edu.vn <p>🦕Trang thực
+            phẩm, sản phẩm sạch🦕<br>
+            (❤️ ω ❤️)</p>
+    </footer>
 </body>
+
 </html>
