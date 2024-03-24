@@ -41,6 +41,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to left, rgb(224, 254, 249), rgb(255, 238, 241));
 }
 
 header {
@@ -73,7 +74,7 @@ header a:hover {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #e9e8e8;
+    background: linear-gradient(to left, rgb(224, 254, 249), rgb(255, 238, 241));
     padding: 20px;
     border-radius: 5px;
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex: 1 1 300px;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.product-details {
+  background-color: lightgray;
+  padding: 10px;
+  position: absolute;
+  top: -10px; /* Điều chỉnh giá trị này để tăng khoảng cách */
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  display: none;
+}
+
+.product:hover .product-details {
+  display: block;
+}
+    </style>
+</head>
+
+<body>
+    <div class="product-list">
+        <div class="product">
+          <h2>Sản phẩm 1</h2>
+          <p>Giá: 10.99</p>
+          <p>Mô tả sản phẩm 1</p>
+          <div class="product-details">
+            <h2>Chi tiết sản phẩm 1</h2>
+            <p>Thông tin chi tiết sản phẩm 1</p>
+          </div>
+        </div>
+        <div class="product">
+          <h2>Sản phẩm 2</h2>
+          <p>Giá: 19.99</p>
+          <p>Mô tả sản phẩm 2</p>
+          <div class="product-details">
+            <h2>Chi tiết sản phẩm 2</h2>
+            <p>Thông tin chi tiết sản phẩm 2</p>
+          </div>
+        </div>
+        <div class="product">
+            <h2>Sản phẩm 2</h2>
+            <p>Giá: 19.99</p>
+            <p>Mô tả sản phẩm 2</p>
+            <div class="product-details">
+              <h2>Chi tiết sản phẩm 2</h2>
+              <p>Thông tin chi tiết sản phẩm 2</p>
+            </div>
+          </div>
+        <!-- Thêm thông tin sản phẩm cho các sản phẩm khác -->
+      </div>
+</body>
+
+</html>
