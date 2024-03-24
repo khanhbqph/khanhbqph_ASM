@@ -15,18 +15,22 @@
     }
 } */
 
-h2 {
+h1 {
     /* animation: blink 1s infinite; */
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
-    
-    color: #626a67;
+    background: linear-gradient(to left, rgb(0, 238, 255), rgb(255, 154, 245));
+    /* Đặt một gradient từ màu đỏ đến màu xanh dương làm nền */
+    -webkit-background-clip: text;
+    /* Áp dụng background gradient vào phần chữ của phần tử */
+    -webkit-text-fill-color: transparent;
+    /* Làm mờ màu chữ ban đầu */
 }
 
-h2:hover {
+h1:hover {
     color: #ff0000;
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 /* @media (max-width: 480px) {
@@ -58,7 +62,7 @@ h2:hover {
 }
 
 .thumbnail {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 30%;
     border: 1px solid black;
     padding: 10px;
@@ -75,13 +79,6 @@ h2:hover {
     /* lay nguyen gia tri cua thuoc tinh width/height */
 }
 
-h3 {
-    font-weight: 500;
-    word-break: break-all;
-    flex: 1;
-    /* flex-grow: 1 tu dong gian ra deu cho vua voi khung */
-}
-
 button {
     background: linear-gradient(to left, rgb(0, 255, 187), pink);
     color: #fff;
@@ -92,7 +89,8 @@ button {
     flex-shrink: 0;
     /* lay nguyen gia tri cua thuoc tinh width/height */
 }
-button:hover{
+
+button:hover {
     border: none;
     cursor: pointer;
     margin-left: 20px;
@@ -102,6 +100,7 @@ button:hover{
     padding: 10px 20px;
     width: 150px;
 }
+
 @media screen and (max-width: 768px) {
     .thumbnail {
         width: calc(45% - 22px);
@@ -113,11 +112,13 @@ button:hover{
         width: 100%;
     }
 }
-@media screen and (max-width: 480px)and (max-width: 768px){
+
+@media screen and (max-width: 480px)and (max-width: 768px) {
     .thumbnail {
         width: calc(45% - 22px);
     }
 }
+
 @media (max-width: 600px) {
     .thumbnail {
         width: 100%;
@@ -136,7 +137,7 @@ button:hover{
 
 
 
-h1 {
+/* h1 {
     text-align: center;
     margin-bottom: 100px;
     margin-top: 100px;
@@ -147,7 +148,7 @@ h1 {
 h1:hover {
     color: #ff0000;
     transform: scale(1.2);
-}
+} */
 
 .starts {
     text-align: center;
