@@ -15,34 +15,34 @@
     }
 } */
 
-h4 {
+h2 {
     /* animation: blink 1s infinite; */
     text-align: center;
     margin-bottom: 100px;
     margin-top: 100px;
-    font-size: 50px;
+    
     color: #626a67;
 }
 
-h4:hover {
+h2:hover {
     color: #ff0000;
     transform: scale(0.9);
 }
 
 /* @media (max-width: 480px) {
-    h4 {
+    h2 {
         font-size: 20px;
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    h4 {
+    h2 {
         font-size: 30px;
     }
 }
 
 @media (min-width: 769px) {
-    h4 {
+    h2 {
         font-size: 40px;
     }
 } */
