@@ -23,6 +23,7 @@ h1 {
     background: linear-gradient(to left, rgb(0, 238, 255), rgb(255, 154, 245));
     /* Đặt một gradient từ màu đỏ đến màu xanh dương làm nền */
     -webkit-background-clip: text;
+    
     /* Áp dụng background gradient vào phần chữ của phần tử */
     -webkit-text-fill-color: transparent;
     /* Làm mờ màu chữ ban đầu */
