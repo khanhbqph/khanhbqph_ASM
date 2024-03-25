@@ -33,7 +33,7 @@ h3 {
 }
 
 button {
-    background-color: #f2b705;
+    background: linear-gradient(to left, rgb(0, 255, 187), pink);
     color: #fff;
     border: none;
     border-radius: 15px;
@@ -41,16 +41,38 @@ button {
     width: 150px;
     flex-shrink: 0;
     /* lay nguyen gia tri cua thuoc tinh width/height */
+}
 
+button:hover {
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    background: linear-gradient(to right, red, pink);
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 150px;
 }
 
 @media screen and (max-width: 768px) {
     .thumbnail {
-        width: calc(48% - 22px);
+        width: calc(45% - 22px);
     }
 }
 
 @media screen and (max-width: 480px) {
+    .thumbnail {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px)and (max-width: 768px) {
+    .thumbnail {
+        width: calc(45% - 22px);
+    }
+}
+
+@media (max-width: 600px) {
     .thumbnail {
         width: 100%;
     }
@@ -78,7 +100,7 @@ h1 {
 
 h1:hover {
     color: #ff0000;
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 
 .starts {

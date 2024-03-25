@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><style>
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+    <style>
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
 
-.product {
-  flex: 1 1 300px;
-  margin: 10px;
-  position: relative;
-  z-index: 1;
-}
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
 
-.product-details {
-  background-color: lightgray;
-  padding: 10px;
-  position: absolute;
-  top: -10px; /* Điều chỉnh giá trị này để tăng khoảng cách */
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  display: none;
-}
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.product:hover .product-details {
-  display: block;
-}
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
-
 <body>
-    <div class="product-list">
-        <div class="product">
-          <h2>Sản phẩm 1</h2>
-          <p>Giá: 10.99</p>
-          <p>Mô tả sản phẩm 1</p>
-          <div class="product-details">
-            <h2>Chi tiết sản phẩm 1</h2>
-            <p>Thông tin chi tiết sản phẩm 1</p>
-          </div>
-        </div>
-        <div class="product">
-          <h2>Sản phẩm 2</h2>
-          <p>Giá: 19.99</p>
-          <p>Mô tả sản phẩm 2</p>
-          <div class="product-details">
-            <h2>Chi tiết sản phẩm 2</h2>
-            <p>Thông tin chi tiết sản phẩm 2</p>
-          </div>
-        </div>
-        <div class="product">
-            <h2>Sản phẩm 2</h2>
-            <p>Giá: 19.99</p>
-            <p>Mô tả sản phẩm 2</p>
-            <div class="product-details">
-              <h2>Chi tiết sản phẩm 2</h2>
-              <p>Thông tin chi tiết sản phẩm 2</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="contact-form">
+                    <input type="text" id="name-input" placeholder="Tên của bạn">
+                    <input type="email" id="email-input" placeholder="Email của bạn">
+                    <textarea id="message-input" placeholder="Tin nhắn"></textarea>
+                    <button onclick="submitForm()">Gửi</button>
+                </div>
+                <div id="contact-info" class="contact-info"></div>
             </div>
-          </div>
-        <!-- Thêm thông tin sản phẩm cho các sản phẩm khác -->
-      </div>
-</body>
+        </div>
+    </div>
 
+    <script>
+        function submitForm() {
+            var nameInput = document.getElementById('name-input');
+            var emailInput = document.getElementById('email-input');
+            var messageInput = document.getElementById('message-input');
+            var nameText = nameInput.value.trim();
+            var emailText = emailInput.value.trim();
+            var messageText = messageInput.value.trim();
+
+            if (nameText !== '' && emailText !== '' && messageText !== '') {
+                var contactInfo = document.getElementById('contact-info');
+                contactInfo.innerHTML = '';
+
+                var nameParagraph = document.createElement('p');
+                nameParagraph.textContent = 'Tên: ' + nameText;
+                contactInfo.appendChild(nameParagraph);
+
+                var emailParagraph = document.createElement('p');
+                emailParagraph.textContent = 'Email: ' + emailText;
+                contactInfo.appendChild(emailParagraph);
+
+                var messageParagraph = document.createElement('p');
+                messageParagraph.textContent = 'Tin nhắn: ' + messageText;
+                contactInfo.appendChild(messageParagraph);
+
+                nameInput.value = '';
+                emailInput.value = '';
+                messageInput.value = '';
+            }
+        }
+    </script>
+</body>
 </html>

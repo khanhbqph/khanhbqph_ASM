@@ -1,6 +1,9 @@
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
 }
 
 .contact-form input[type="text"],
@@ -8,12 +11,21 @@
 .contact-form textarea {
     width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
 .contact-form button {
     display: block;
-    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .contact-info {
@@ -24,11 +36,59 @@
     margin-bottom: 5px;
 }
 
-@media (min-width: 768px) {
+/* Custom Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+.container {
+    margin-top: 50px;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
     .contact-form {
         max-width: 800px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 480px)and (max-width: 768px) {
+    .contact-form {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        max-width: 800px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* header */
 
@@ -239,8 +299,9 @@ h1 {
 
 h1:hover {
     color: #ff0000;
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
+
 
 footer {
     background-color: rgb(230, 171, 227);
