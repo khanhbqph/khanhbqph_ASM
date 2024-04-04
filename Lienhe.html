@@ -30,52 +30,62 @@
     </header>
     <h1>Liên hệ</h1>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8">
-                <div class="contact-form">
-                    <input type="text" id="name-input" placeholder="Tên của bạn">
-                    <input type="email" id="email-input" placeholder="Email của bạn">
-                    <textarea id="message-input" placeholder="Tin nhắn"></textarea>
-                    <button onclick="submitForm()">Gửi</button>
-                
-                <div id="contact-info" class="contact-info"></div>
-                </div>
-            </div>
-        </div>
+    <div class="contact-form">
+        <h2>Liên hệ</h2>
+        <form action="process-contact.php" method="post" onsubmit="return showFormData(event)">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn" required>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn" required>
+
+            <label for="message">Nội dung:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung" required></textarea>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Gửi</button>              
+        </form>
+        <div id="confirmationMessage"></div>
     </div>
-    
 
     <script>
-        function submitForm() {
-            var nameInput = document.getElementById('name-input');
-            var emailInput = document.getElementById('email-input');
-            var messageInput = document.getElementById('message-input');
-            var nameText = nameInput.value.trim();
-            var emailText = emailInput.value.trim();
-            var messageText = messageInput.value.trim();
+      function showFormData(event) {
+    event.preventDefault(); // Ngăn chặn gửi form mặc định
 
-            if (nameText !== '' && emailText !== '' && messageText !== '') {
-                var contactInfo = document.getElementById('contact-info');
-                contactInfo.innerHTML = '';
+    // Lấy thông tin đã nhập
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
 
-                var nameParagraph = document.createElement('p');
-                nameParagraph.textContent = 'Tên: ' + nameText;
-                contactInfo.appendChild(nameParagraph);
+    // Tạo thông báo xác nhận
+    var confirmationMessage = "Thông báo xác nhận\n\n" +
+                              "Tên: " + name + "\n" +
+                              "Email: " + email + "\n" +
+                              "Số điện thoại: " + phone + "\n" +
+                              "Nội dung: " + message;
 
-                var emailParagraph = document.createElement('p');
-                emailParagraph.textContent = 'Email: ' + emailText;
-                contactInfo.appendChild(emailParagraph);
+    var confirmed = confirm(confirmationMessage + "\n \n"+"Xác nhận gửi dữ liệu đến server?");
 
-                var messageParagraph = document.createElement('p');
-                messageParagraph.textContent = 'Tin nhắn: ' + messageText;
-                contactInfo.appendChild(messageParagraph);
 
-                nameInput.value = '';
-                emailInput.value = '';
-                messageInput.value = '';
-            }
+    if (confirmed) {
+    // Thông báo xác nhận đã được nhận, bạn có thể thực hiện các thao tác khác ở đây, ví dụ: gửi dữ liệu đến server
+    console.log("Đã gửi dữ liệu đến server");
+}
+         if (confirmed) {
+            document.getElementById("confirmationMessage").innerText = "\n \n" + "Thông báo xác nhận đã được nhận, dữ liệu sẽ được gửi đến server";
+            // Thực hiện các thao tác khác ở đây, ví dụ: gửi dữ liệu đến server
+        } else {
+            document.getElementById("confirmationMessage").innerText = "";
+            // Xóa thông báo xác nhận
         }
+    
+        return false; // Ngăn chặn refresh trang
+
+
+}
     </script>
     <footer style="margin-top: 100px;">Sản phẩm đồ ăn bán chạy nhất © khanhbqph21610 Copyrighted
         khanhbqph21610@fpt.edu.vn <p>🦕Trang thực

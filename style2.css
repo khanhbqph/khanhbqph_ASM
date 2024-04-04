@@ -53,14 +53,7 @@ h1:hover {
 } */
 
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    background: linear-gradient(to left, rgb(224, 254, 249), rgb(255, 238, 241));
-    margin-top: 40px;
 
-}
 
 .thumbnail {
     margin-top: 20px;
