@@ -13,6 +13,16 @@
         height: 300px;
         text-align: center;
         margin-top: 20px;
+        background: linear-gradient(to right, red, pink);
+
+      }
+      .carousel-item img{
+        
+        margin-top: 20px;
+
+      }
+      ul .carousel-indicators{
+        margin-top: 10px;
       }
     </style>
     <style>
@@ -23,9 +33,9 @@
       }
 
       body {
-        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       header {
@@ -51,6 +61,7 @@
         margin: 0 auto;
         padding: 20px;
         display: flex;
+        overflow: hidden;
         align-items: center;
         flex-wrap: wrap;
         /* justify-content: space-around; */
@@ -61,6 +72,7 @@
         );
       }
       .container {
+        overflow: hidden;
         max-width: 1000px;
         margin: 0 auto;
         background: linear-gradient(
@@ -80,6 +92,7 @@
         margin-left: auto;
         display: flex;
         align-items: center;
+        margin-right: 20px;
       }
 
       footer p {
@@ -229,6 +242,7 @@
     </style>
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
@@ -254,16 +268,7 @@
         </a>
       </div>
     </header>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "container") {
-          x.className += " responsive";
-        } else {
-          x.className = "container";
-        }
-      }
-      </script>
+    
     <h1>
       Chuyên cung cấp đồ ăn ngon, hợp vệ sinh cho mọi người với những món ăn
       bình dân quen thuộc.
@@ -351,6 +356,217 @@
           <p>Thông tin chi tiết sản phẩm 2</p>
         </div>
       </div>
+      
+      <div class="thumbnail" style="grid-column: 3/4">
+        <img class="img-main" src="img/products.jpg" alt="product" />
+        <div class="starts">
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+        </div>
+        <div class="name">Combo món ăn bình dân</div>
+        <div class="desc">
+          - Đồ ăn bao gồm: lạp xưởng,<br />
+          đậu rang thịt, ngũ cốc, hoa quả.
+        </div>
+        <del class="price-del">430.000VNĐ</del>
+        <div class="price" data-name="Sản phẩm 1" data-price="10">
+          Giá: 200.000 VNĐ
+        </div>
+        <button>View detail</button>
+        <div class="product-details">
+          <h2>Chi tiết sản phẩm 2</h2>
+          <p>Thông tin chi tiết sản phẩm 2</p>
+        </div>
+      </div>
+
+      <div class="thumbnail" style="grid-column: 3/4">
+        <img class="img-main" src="img/products.jpg" alt="product" />
+        <div class="starts">
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+        </div>
+        <div class="name">Combo món ăn bình dân</div>
+        <div class="desc">
+          - Đồ ăn bao gồm: lạp xưởng,<br />
+          đậu rang thịt, ngũ cốc, hoa quả.
+        </div>
+        <del class="price-del">430.000VNĐ</del>
+        <div class="price" data-name="Sản phẩm 1" data-price="10">
+          Giá: 200.000 VNĐ
+        </div>
+        <button>View detail</button>
+        <div class="product-details">
+          <h2>Chi tiết sản phẩm 2</h2>
+          <p>Thông tin chi tiết sản phẩm 2</p>
+        </div>
+      </div>
+
+      <div class="thumbnail" style="grid-column: 3/4">
+        <img class="img-main" src="img/products.jpg" alt="product" />
+        <div class="starts">
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+        </div>
+        <div class="name">Combo món ăn bình dân</div>
+        <div class="desc">
+          - Đồ ăn bao gồm: lạp xưởng,<br />
+          đậu rang thịt, ngũ cốc, hoa quả.
+        </div>
+        <del class="price-del">430.000VNĐ</del>
+        <div class="price" data-name="Sản phẩm 1" data-price="10">
+          Giá: 200.000 VNĐ
+        </div>
+        <button>View detail</button>
+        <div class="product-details">
+          <h2>Chi tiết sản phẩm 2</h2>
+          <p>Thông tin chi tiết sản phẩm 2</p>
+        </div>
+      </div>
+
+      <div class="thumbnail" style="grid-column: 3/4">
+        <img class="img-main" src="img/products.jpg" alt="product" />
+        <div class="starts">
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+        </div>
+        <div class="name">Combo món ăn bình dân</div>
+        <div class="desc">
+          - Đồ ăn bao gồm: lạp xưởng,<br />
+          đậu rang thịt, ngũ cốc, hoa quả.
+        </div>
+        <del class="price-del">430.000VNĐ</del>
+        <div class="price" data-name="Sản phẩm 1" data-price="10">
+          Giá: 200.000 VNĐ
+        </div>
+        <button>View detail</button>
+        <div class="product-details">
+          <h2>Chi tiết sản phẩm 2</h2>
+          <p>Thông tin chi tiết sản phẩm 2</p>
+        </div>
+      </div>
+
+      <div class="thumbnail" style="grid-column: 3/4">
+        <img class="img-main" src="img/products.jpg" alt="product" />
+        <div class="starts">
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+        </div>
+        <div class="name">Combo món ăn bình dân</div>
+        <div class="desc">
+          - Đồ ăn bao gồm: lạp xưởng,<br />
+          đậu rang thịt, ngũ cốc, hoa quả.
+        </div>
+        <del class="price-del">430.000VNĐ</del>
+        <div class="price" data-name="Sản phẩm 1" data-price="10">
+          Giá: 200.000 VNĐ
+        </div>
+        <button>View detail</button>
+        <div class="product-details">
+          <h2>Chi tiết sản phẩm 2</h2>
+          <p>Thông tin chi tiết sản phẩm 2</p>
+        </div>
+      </div>
+
+      <div class="thumbnail" style="grid-column: 3/4">
+        <img class="img-main" src="img/products.jpg" alt="product" />
+        <div class="starts">
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+          <span>
+            <img src="img/starts.png" alt="" style="width: 20px" />
+          </span>
+        </div>
+        <div class="name">Combo món ăn bình dân</div>
+        <div class="desc">
+          - Đồ ăn bao gồm: lạp xưởng,<br />
+          đậu rang thịt, ngũ cốc, hoa quả.
+        </div>
+        <del class="price-del">430.000VNĐ</del>
+        <div class="price" data-name="Sản phẩm 1" data-price="10">
+          Giá: 200.000 VNĐ
+        </div>
+        <button>View detail</button>
+        <div class="product-details">
+          <h2>Chi tiết sản phẩm 2</h2>
+          <p>Thông tin chi tiết sản phẩm 2</p>
+        </div>
+      </div>
+
       <div class="thumbnail" style="grid-column: 3/4">
         <img class="img-main" src="img/products.jpg" alt="product" />
         <div class="starts">
@@ -860,7 +1076,7 @@
         });
       });
     </script>
-
+<script src="scrip.js"></script>
     <footer>
       Sản phẩm đồ ăn bán chạy nhất © khanhbqph21610 Copyrighted
       khanhbqph21610@fpt.edu.vn
