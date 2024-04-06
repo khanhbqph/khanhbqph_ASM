@@ -18,7 +18,7 @@
 @media screen and (max-width: 600px) {
   .container.responsive {position: relative;}
   .container.responsive .icon {
-    position: absolute;
+    
     right: 0;
     top: 0;
   }
@@ -50,7 +50,7 @@
 @media screen and (max-width: 480px), (max-width: 768px) {
   .container.responsive {position: relative;}
   .container.responsive .icon {
-    position: absolute;
+    
     right: 0;
     top: 0;
   }
