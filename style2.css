@@ -34,6 +34,26 @@ h1:hover {
     transform: scale(0.8);
 }
 
+h2 {
+    /* animation: blink 1s infinite; */
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background: linear-gradient(to left, rgb(255, 6, 0), rgb(255, 154, 245));
+    /* Đặt một gradient từ màu đỏ đến màu xanh dương làm nền */
+    -webkit-background-clip: text;
+    text-align: center;
+    /* Áp dụng background gradient vào phần chữ của phần tử */
+    -webkit-text-fill-color: transparent;
+    /* Làm mờ màu chữ ban đầu */
+}
+
+h2:hover {
+    
+    transform: scale(0.8);
+}
+
+
 /* @media (max-width: 480px) {
     h2 {
         font-size: 20px;
